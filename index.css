@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;700&family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+.team-section {
+  background: #6be9ff;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.single-team {
+  width: 250px;
+  height: 300px;
+  margin: 15px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.person-image {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+
+.socialicons {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-items: left;
+}
+.socialicons a {
+  text-decoration: none;
+  background: #a3d9e2;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+.socialicons a:first-child {
+  opacity: 0;
+  transition: 0.9s;
+}
+.socialicons a:nth-child(2) {
+  opacity: 0;
+  transition: 0.8s;
+}
+.socialicons a:nth-child(3) {
+  opacity: 0;
+  transition: 0.7s;
+}
+.socialicons a:nth-child(4) {
+  opacity: 0;
+  transition: 0.7s;
+}
+.socialicons a:last-child {
+  opacity: 0;
+  transition: 0.5s;
+}
+.socialicons a:hover {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.single-team:hover .person-image img {
+  opacity: 0.5;
+}
+.single-team:hover .socialicons a:first-child {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.single-team:hover .socialicons a:nth-child(2) {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.single-team:hover .socialicons a:nth-child(3) {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.single-team:hover .socialicons a:nth-child(4) {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.single-team:hover .socialicons a:last-child {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.border {
+  background: #6be9ff;
+  padding: 6px;
+}
+.single-team:hover .border {
+  background: #d4edf0;
+}
+
+.person-image img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0.5s;
+}
+.team-info {
+  position: relative;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+}
+.team-info::before {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  margin-left: -7px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  transform: rotate(228deg);
+}
+.team-info h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.team-info span {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.position {
+  color: #88d2de;
+}
